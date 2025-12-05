@@ -12,16 +12,18 @@ When a hand touches or enters the red danger zone → instantly switches from **
 
 ---
 ## Demo Video
+## Live Demo
+
 <p align="center">
-  <a href="https://drive.google.com/file/d/https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=drive_link/view?usp=sharing">
-    <img src="https://drive.google.com/thumbnail?id=https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=drive_link" width="800"/>
+  <a href="https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=sharing">
+    <img src="https://drive.google.com/thumbnail?id=1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_&sz=w1000" width="850"/>
   </a>
 </p>
 <p align="center">
-  <em>Click the image above to watch the live demo</em>
+  <em>Click the image → watch hand go from SAFE → WARNING → DANGER in real time</em>
 </p>
 
-*(Replace `YOUR_DRIVE_VIDEO_ID` with your actual Google Drive video ID — the part after `/d/`)*
+
 
 ---
 ## What This Project Actually Does
