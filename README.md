@@ -1,40 +1,89 @@
-# Hand_Detection_Arvyax
+# Virtual Hand Safety Sensor (No MediaPipe • Pure OpenCV)
 
-# Virtual Hand Safety Sensor 
-**A real-time hand intrusion detection system using only OpenCV – no MediaPipe, no deep learning**
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.8%2B-red)](https://opencv.org/)
+[![FPS](https://img.shields.io/badge/Performance-45--55%20FPS-green)](#)
+[![License](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 
-[![demo](demo/demo.gif)](https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=drive_link) 
-*(Live demo – hand approaches → WARNING → DANGER)*
+**A real-time hand intrusion detection system** that works exactly like industrial safety light curtains — but built with just a webcam and pure OpenCV.  
+No MediaPipe • No deep learning • Runs at **45–55 FPS on CPU only**
 
-### What This Project Actually Is
-A **virtual safety zone** that detects when a human hand enters a forbidden area in front of a camera.
+When a hand touches or enters the red danger zone → instantly switches from **SAFE → WARNING → DANGER** with glowing visual feedback.
 
-It behaves exactly like expensive industrial safety systems ($10,000–$50,000) from SICK, Keyence, or Pilz – but built with a $15 webcam and pure OpenCV running at **45–55 FPS on CPU**.
+---
+## Demo Video
+<p align="center">
+  <a href="https://drive.google.com/file/d/https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=drive_link/view?usp=sharing">
+    <img src="https://drive.google.com/thumbnail?id=https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=drive_link" width="800"/>
+  </a>
+</p>
+<p align="center">
+  <em>Click the image above to watch the live demo</em>
+</p>
 
-### Core Features (All Built from Scratch)
-- Accurate hand detection using **optical flow + YCrCb skin filtering** (no background subtraction issues)
-- Super reliable fingertip detection via **convexity defects**
-- Full-hand intrusion fallback – even if fingers are flat or defects fail, it still triggers
-- **3-state logic**:
-  - **SAFE** – hand outside
-  - **WARNING** – hand/finger touches the boundary
-  - **DANGER** – any part enters the red zone
-- Clean, centered red danger box with glowing feedback
-- Huge, unmissable status text
+*(Replace `YOUR_DRIVE_VIDEO_ID` with your actual Google Drive video ID — the part after `/d/`)*
 
-### Why This Stands Out
-- Zero external ML models → runs anywhere (even Raspberry Pi)
-- No false negatives – uses both fingertip and full contour checking
-- Real-time performance on CPU only
-- Clean, readable, well-commented code (human-written, not copy-paste)
+---
+## What This Project Actually Does
+Creates a **virtual forbidden zone** in front of your webcam:
+- Hand far away → **SAFE** (green text)
+- Finger/hand touches the boundary → **WARNING** (yellow ring glow)
+- Any part enters the red box → **DANGER** (intense red glow + huge red text)
 
-### Real Use Cases
+Used for:
 - Robot cell safeguarding
-- CNC/press machine guarding
+- CNC / press machine protection
 - Interactive safety demos
-- Teaching advanced computer vision concepts
+- Teaching real-time computer vision
 
-### How to Run
+---
+## Tech Stack & Techniques (All from Scratch)
+- **Language:** Python 3.8+
+- **Core Library:** OpenCV + NumPy
+- **Hand Detection:** Optical flow + YCrCb skin segmentation
+- **Fingertip Detection:** Convexity defects
+- **Ultra-Reliable Intrusion Logic:** Full contour pixel check (zero false negatives)
+- **Visual Feedback:** Dynamic glow + huge centered text
+
+No external models • No GPU • Works on laptops, Raspberry Pi, industrial PCs
+
+---
+## Prerequisites
+- Python 3.8 or higher
+- Webcam (built-in or USB)
+- That’s it!
+
+---
+## Setup — Step by Step
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/Hand_Detection_Arvyax.git
+cd Hand_Detection_Arvyax
+```
+
+### 2. Create Virtual Environment (Recommended)
+```bash
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS / Linux
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
 ```bash
 pip install opencv-python numpy
+source venv/bin/activate
+```
+
+### 4. Run appFinal.py
+```bash
+# In windows
 python appFinal.py
+
+# In mac/linux
+python3 appFinal.py
+```
