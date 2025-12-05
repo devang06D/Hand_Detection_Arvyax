@@ -1,9 +1,9 @@
 # Hand_Detection_Arvyax
 
-# Virtual Hand Safety Sensor ⚠️  
+# Virtual Hand Safety Sensor 
 **A real-time hand intrusion detection system using only OpenCV – no MediaPipe, no deep learning**
 
-[![demo](demo/demo.gif)](https://www.youtube.com/watch?v=your-video-if-you-have-one)  
+[![demo](demo/demo.gif)]((https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=drive_link))  
 *(Live demo – hand approaches → WARNING → DANGER)*
 
 ### What This Project Actually Is
@@ -37,4 +37,4 @@ It behaves exactly like expensive industrial safety systems ($10,000–$50,000) 
 ### How to Run
 ```bash
 pip install opencv-python numpy
-python hand_danger_box_3state_clean.py
+python appFinal.py
