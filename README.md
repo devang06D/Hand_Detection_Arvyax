@@ -3,7 +3,7 @@
 # Virtual Hand Safety Sensor 
 **A real-time hand intrusion detection system using only OpenCV – no MediaPipe, no deep learning**
 
-[![demo](demo/demo.gif)]((https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=drive_link))  
+[![demo](demo/demo.gif)](https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=drive_link) 
 *(Live demo – hand approaches → WARNING → DANGER)*
 
 ### What This Project Actually Is
