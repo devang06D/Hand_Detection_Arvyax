@@ -14,13 +14,15 @@ When a hand touches or enters the red danger zone → instantly switches from **
 ## Demo Video
 ## Live Demo
 
+## Live Demo
+
 <p align="center">
   <a href="https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=sharing">
     <img src="https://drive.google.com/thumbnail?id=1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_&sz=w1000" width="850"/>
   </a>
 </p>
 <p align="center">
-  <em>Click the image → watch hand go from SAFE → WARNING → DANGER in real time</em>
+  <em>Click to watch → SAFE → WARNING → DANGER in real time (45–55 FPS)</em>
 </p>
 
 
