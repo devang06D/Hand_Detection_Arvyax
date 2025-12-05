@@ -12,9 +12,6 @@ When a hand touches or enters the red danger zone → instantly switches from **
 
 ---
 ## Demo Video
-## Live Demo
-
-## Live Demo
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1mhkouwmzEFNBW2NbCTRKB5FVGmcsCYL_/view?usp=sharing">
