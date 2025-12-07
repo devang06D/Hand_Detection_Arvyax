@@ -59,7 +59,7 @@ No external models • No GPU • Works on laptops, Raspberry Pi, industrial PCs
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/Hand_Detection_Arvyax.git
+git clone https://github.com/devang06D/Hand_Detection_Arvyax.git
 cd Hand_Detection_Arvyax
 ```
 
